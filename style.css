@@ -38,9 +38,15 @@ body {
   color: #FFF2E7;
   font-family: 'Sarala', sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
 }
+.cabecalho-menu-item:hover {
+  color: #ff47ff;
+  border: none;
+  font-weight: 700;
+  transition: all .3s ease-in-out 0s;
 
+}
 .conteudo {
   border-top: 0.4px solid #FFFFFF;
   margin-bottom: 48px;
@@ -61,7 +67,7 @@ body {
 }
 
 .conteudo-principal-escrito-titulo {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Righteous', cursive;
   font-size: 64px;
   font-weight: 700;
@@ -136,9 +142,9 @@ body {
   }
 
 button::before {
-  border: 6px solid #f700ffcb;
+  border: 6px solid #f700ff;
   border-radius: 1000px;
-  box-shadow: 0 0 60px rgba(238, 113, 221, 0.64);
+  box-shadow: 0 0 60px rgba(247, 78, 224, 0.64);
   content: '';
   left: 50%;
   min-width: calc(200px + 12px);
