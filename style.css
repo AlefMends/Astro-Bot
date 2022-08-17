@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
   
 }
@@ -18,9 +18,9 @@ body {
 }
 
 .cabecalho {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
   padding: 24px;
 }
@@ -35,21 +35,21 @@ body {
 }
 
 .cabecalho-menu-item {
-  font-family: 'Sarala', sans-serif;
   color: #FFF2E7;
+  font-family: 'Sarala', sans-serif;
+  font-size: 20px;
   font-weight: 400;
-  font-size: 20px
 }
 
 .conteudo {
-  margin-bottom: 48px;
   border-top: 0.4px solid #FFFFFF;
+  margin-bottom: 48px;
 }
 
 .conteudo-principal {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -60,17 +60,17 @@ body {
 }
 
 .conteudo-principal-escrito-titulo {
-  font-family: 'Righteous', cursive;
-  font-weight: 700;
-  font-size: 64px;
   color: #FFFFFF;
+  font-family: 'Righteous', cursive;
+  font-size: 64px;
+  font-weight: 700;
 }
 
 .conteudo-principal-escrito-subtitulo {
-  font-family: 'Sarala', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
   color: #FFFFFF;
+  font-family: 'Sarala', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .conteudo-principal-imagem {
@@ -78,83 +78,76 @@ body {
 }
 
 .conteudo-secundario {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
   margin-top: 48px;
 }
 
 .conteudo-secundario-titulo {
   border-top: 0.4px solid #FFFFFF;
-  padding-top: 48px;
+  color: #FFFFFF;
   font-family: 'Righteous', cursive;
   font-weight: 400;
   font-size: 24px;
-  color: #FFFFFF;
+  padding-top: 48px;
   margin-bottom: 16px;
 }
 
 .conteudo-secundario-paragrafo {
-  font-family: 'Sarala', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
   color: #ffffff;
+  font-family: 'Sarala', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .rodape {
-    padding: 32px;
-    border-top: 0.4px solid #FFFFFF;
+  border-top: 0.4px solid #FFFFFF;
+  padding: 32px;
 }
 
 .rodape-imagem {
-  height: 488px;
   display: block;
+  height: 488px;
   margin: 0 auto;
 }
 
 /*botão começo*/
 
-.wrap {
-  display: flex;
-  align-items: left;
-  justify-content: left;
-}
-
 .button {
-  min-width: 200px;
-  min-height: 60px;
-  font-family: 'Sarala', sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
-  font-weight: 700;
-  color: #fbfbff;
   background: #d14fc0;
-  background: linear-gradient(90deg, rgb(233, 155, 240) 0%, rgb(245, 84, 210) 100%);
+  background: linear-gradient(90deg, rgb(236, 117, 216) 0%, rgb(245, 84, 210) 100%);
   border: none;
   border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(205, 79, 209, 0.64);
-  transition: all 0.3s ease-in-out 0s;
+  color: #fbfbff;
   cursor: pointer;
+  font-family: 'Sarala', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  min-height: 60px;
+  min-width: 200px;
   outline: none;
-  position: relative;
   padding: 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out 0s;
+  text-transform: uppercase;
   }
 
 button::before {
-content: '';
+  border: 6px solid #f700ffcb;
   border-radius: 1000px;
+  box-shadow: 0 0 60px rgba(238, 113, 221, 0.64);
+  content: '';
+  left: 50%;
   min-width: calc(200px + 12px);
   min-height: calc(60px + 12px);
-  border: 6px solid #f700ffcb;
-  box-shadow: 0 0 60px rgba(238, 113, 221, 0.64);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
   transition: all .3s ease-in-out 0s;
+  top: 50%;
 }
 
 .button:hover, .button:focus {
@@ -167,16 +160,16 @@ button:hover::before, button:focus::before {
 }
 
 button::after {
-  content: '';
-  width: 30px; height: 30px;
-  border-radius: 100%;
-  border: 6px solid #00FFCB;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   animation: ring 1.5s infinite;
+  border: 6px solid #ea00ff;
+  border-radius: 100%;
+  content: '';
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 30px; height: 30px;
+  z-index: -1;
 }
 
 button:hover::after, button:focus::after {
@@ -186,13 +179,13 @@ button:hover::after, button:focus::after {
 
 @keyframes ring {
   0% {
-    width: 30px;
     height: 30px;
+    width: 30px;
     opacity: 1;
   }
   100% {
-    width: 200px;
     height: 200px;
+    width: 200px;
     opacity: 0.3;
   }
 }
