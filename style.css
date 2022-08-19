@@ -195,7 +195,7 @@ button:hover::after, button:focus::after {
 }
 /*======== FINAL BOTÃO ==========*/
 
-/*=========MEDIA QUERIES (DISPOSITIVOS PEQUENOS) ==========*/
+/*=========MEDIA QUERIES (DISPOSITIVOS PEQUENOS) obs: em construção! ==========*/
 @media screen and (max-width:780px){
   .conteudo .conteudo-principal .conteudo-principal-escrito .conteudo-principal-escrito-titulo {
       display:block;
